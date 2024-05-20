@@ -1,0 +1,322 @@
+{
+    "person": {
+        "name": "Persona",
+        "price": 0
+    },
+    "bicycle": {
+        "name": "Bicicleta",
+        "price": 0
+    },
+    "car": {
+        "name": "Carro",
+        "price": 90000
+    },
+    "motorcycle": {
+        "name": "Motocicleta",
+        "price": 10000
+    },
+    "airplane": {
+        "name": "Avión",
+        "price": 90000000
+    },
+    "bus": {
+        "name": "Bus",
+        "price": 40000
+    },
+    "train": {
+        "name": "Tren",
+        "price": 25000000
+    },
+    "truck": {
+        "name": "Camión",
+        "price": 80000
+    },
+    "boat": {
+        "name": "Bote",
+        "price": 2000000
+    },
+    "traffic light": {
+        "name": "Semáforo",
+        "price": 3000
+    },
+    "fire hydrant": {
+        "name": "Hidrante",
+        "price": 150000
+    },
+    "stop sign": {
+        "name": "Signo de alto",
+        "price": 3000
+    },
+    "parking meter": {
+        "name": "Parquímetro",
+        "price": 3000
+    },
+    "bench": {
+        "name": "Banca",
+        "price": 3000
+    },
+    "bird": {
+        "name": "Ave",
+        "price": 1000
+    },
+    "cat": {
+        "name": "Gato",
+        "price": 250
+    },
+    "dog": {
+        "name": "Perro",
+        "price": 11000
+    },
+    "horse": {
+        "name": "Caballo",
+        "price": 40000
+    },
+    "sheep": {
+        "name": "Oveja",
+        "price": 80000
+    },
+    "cow": {
+        "name": "Vaca",
+        "price": 90000
+    },
+    "elephant": {
+        "name": "Elefante",
+        "price": 2000000
+    },
+    "bear": {
+        "name": "Oso",
+        "price": 150000
+    },
+    "zebra": {
+        "name": "Cebra",
+        "price": 80000
+    },
+    "giraffe": {
+        "name": "Jirafa",
+        "price": 2000000
+    },
+    "backpack": {
+        "name": "Mochila",
+        "price": 300
+    },
+    "umbrella": {
+        "name": "Sombrilla",
+        "price": 90
+    },
+    "handbag": {
+        "name": "Bolso",
+        "price": 1500
+    },
+    "tie": {
+        "name": "Corbata",
+        "price": 200
+    },
+    "suitcase": {
+        "name": "Maleta",
+        "price": 300
+    },
+    "frisbee": {
+        "name": "Frisbi",
+        "price": 100
+    },
+    "skis": {
+        "name": "Ski",
+        "price": 150
+    },
+    "snowboard": {
+        "name": "Snowboard",
+        "price": 200
+    },
+    "sports ball": {
+        "name": "Pelota",
+        "price": 300
+    },
+    "kite": {
+        "name": "Kite",
+        "price": 150
+    },
+    "baseball bat": {
+        "name": "Bate de beisbol",
+        "price": 290
+    },
+    "baseball glove": {
+        "name": "Guante de beisbol",
+        "price": 150
+    },
+    "skateboard": {
+        "name": "Skateboard",
+        "price": 300
+    },
+    "surfboard": {
+        "name": "Tabla de surf",
+        "price": 300
+    },
+    "tennis racket": {
+        "name": "Raqueta de tenis",
+        "price": 300
+    },
+    "bottle": {
+        "name": "Botella",
+        "price": 150
+    },
+    "wine glass": {
+        "name": "Copa de vino",
+        "price": 150
+    },
+    "cup": {
+        "name": "Vaso",
+        "price": 30
+    },
+    "fork": {
+        "name": "Tenedor",
+        "price": 5
+    },
+    "knife": {
+        "name": "Cuchillo",
+        "price": 5
+    },
+    "spoon": {
+        "name": "Cuchara",
+        "price": 5
+    },
+    "bowl": {
+        "name": "Tazón",
+        "price": 25
+    },
+    "banana": {
+        "name": "Banano",
+        "price": 8
+    },
+    "apple": {
+        "name": "Manzana",
+        "price": 5
+    },
+    "sandwich": {
+        "name": "Sándwich",
+        "price": 15
+    },
+    "orange": {
+        "name": "Naranja",
+        "price": 8
+    },
+    "broccoli": {
+        "name": "Brócoli",
+        "price": 8
+    },
+    "carrot": {
+        "name": "Zanahoria",
+        "price": 8
+    },
+    "hot dog": {
+        "name": "Chévere",
+        "price": 10
+    },
+    "pizza": {
+        "name": "Pizza",
+        "price": 50
+    },
+    "donut": {
+        "name": "Dona",
+        "price": 5
+    },
+    "cake": {
+        "name": "Pastel",
+        "price": 150
+    },
+    "chair": {
+        "name": "Silla",
+        "price": 350
+    },
+    "couch": {
+        "name": "Sillón",
+        "price": 10000
+    },
+    "potted plant": {
+        "name": "Planta en maceta",
+        "price": 150
+    },
+    "bed": {
+        "name": "Cama",
+        "price": 5000
+    },
+    "dining table": {
+        "name": "Mesa de comedor",
+        "price": 5000
+    },
+    "toilet": {
+        "name": "Inodoro",
+        "price": 5000
+    },
+    "tv": {
+        "name": "Televisor",
+        "price": 10000
+    },
+    "laptop": {
+        "name": "Computador portátil",
+        "price": 6700
+    },
+    "mouse": {
+        "name": "Mouse",
+        "price": 310
+    },
+    "remote": {
+        "name": "Control remoto",
+        "price": 100
+    },
+    "keyboard": {
+        "name": "Teclado",
+        "price": 490
+    },
+    "cell phone": {
+        "name": "Celular",
+        "price": 1500
+    },
+    "microwave": {
+        "name": "Microondas",
+        "price": 2000
+    },
+    "oven": {
+        "name": "Horno",
+        "price": 5000
+    },
+    "toaster": {
+        "name": "Tostador",
+        "price": 500
+    },
+    "sink": {
+        "name": "Lavamanos",
+        "price": 15000
+    },
+    "refrigerator": {
+        "name": "Refrigerador",
+        "price": 150
+    },
+    "book": {
+        "name": "Libro",
+        "price": 300
+    },
+    "clock": {
+        "name": "Reloj",
+        "price": 150
+    },
+    "vase": {
+        "name": "Florero",
+        "price": 50
+    },
+    "scissors": {
+        "name": "Tijeras",
+        "price": 10
+    },
+    "teddy bear": {
+        "name": "Osito de peluche",
+        "price": 150
+    },
+    "hair drier": {
+        "name": "Secadora de pelo",
+        "price": 599
+    },
+    "toothbrush": {
+        "name": "Cepillo de dientes",
+        "price": 15
+    }
+}
