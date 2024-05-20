@@ -1,6 +1,11 @@
 # Inteligencia artificial 
-Ejercicios desarrollados dentro del curso de inteligencia artificial
+Proyecto desarrollado para el curso de inteligencia artificial
 
-Dentro de este repositorio hay varias ramas, cada una haciendo referencia y con los contenidos vistos en cada clase y sus ejercicios.
+Este proyecto intenta emular un detector de objetos con modelos pre entrenados.
 
-Estudiante: Pablo Andrés Cotí Arredondo 1653221
+**Estudiantes:**   
+Pablo Andrés Cotí Arredondo 1653221  
+Angel André Cotoc Cuzal 1518321
+
+## Inicialización del proyecto
+- Se deben exportar a formato *onnx* los modelos, para esto se debe ejecutar el archivo `export_models.py`
