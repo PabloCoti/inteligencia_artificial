@@ -2,6 +2,7 @@ import cv2
 import json
 from ultralytics import YOLO
 
+
 class ShopAI:
     # Init
     def __init__(self):
@@ -17,23 +18,89 @@ class ShopAI:
         self.BancopolyModel = YOLO("models/bancopoly.onnx", task="detect")
 
         self.clsObject = [
-            "person", "bicycle", "car", "motorcycle", "airplane", "bus", "train", "truck",
-            "boat", "traffic light", "fire hydrant", "stop sign", "parking meter", "bench",
-            "bird", "cat", "dog", "horse", "sheep", "cow", "elephant", "bear", "zebra",
-            "giraffe", "backpack", "umbrella", "handbag", "tie", "suitcase", "frisbee",
-            "skis", "snowboard", "sports ball", "kite", "baseball bat", "baseball glove",
-            "skateboard", "surfboard", "tennis racket", "bottle", "wine glass", "cup",
-            "fork", "knife", "spoon", "bowl", "banana", "apple", "sandwich", "orange",
-            "broccoli", "carrot", "hot dog", "pizza", "donut", "cake", "chair", "couch",
-            "potted plant", "bed", "dining table", "toilet", "tv", "laptop", "mouse",
-            "remote", "keyboard", "cell phone", "microwave", "oven", "toaster", "sink",
-            "refrigerator", "book", "clock", "vase", "scissors", "teddy bear", "hair drier",
+            "person",
+            "bicycle",
+            "car",
+            "motorcycle",
+            "airplane",
+            "bus",
+            "train",
+            "truck",
+            "boat",
+            "traffic light",
+            "fire hydrant",
+            "stop sign",
+            "parking meter",
+            "bench",
+            "bird",
+            "cat",
+            "dog",
+            "horse",
+            "sheep",
+            "cow",
+            "elephant",
+            "bear",
+            "zebra",
+            "giraffe",
+            "backpack",
+            "umbrella",
+            "handbag",
+            "tie",
+            "suitcase",
+            "frisbee",
+            "skis",
+            "snowboard",
+            "sports ball",
+            "kite",
+            "baseball bat",
+            "baseball glove",
+            "skateboard",
+            "surfboard",
+            "tennis racket",
+            "bottle",
+            "wine glass",
+            "cup",
+            "fork",
+            "knife",
+            "spoon",
+            "bowl",
+            "banana",
+            "apple",
+            "sandwich",
+            "orange",
+            "broccoli",
+            "carrot",
+            "hot dog",
+            "pizza",
+            "donut",
+            "cake",
+            "chair",
+            "couch",
+            "potted plant",
+            "bed",
+            "dining table",
+            "toilet",
+            "tv",
+            "laptop",
+            "mouse",
+            "remote",
+            "keyboard",
+            "cell phone",
+            "microwave",
+            "oven",
+            "toaster",
+            "sink",
+            "refrigerator",
+            "book",
+            "clock",
+            "vase",
+            "scissors",
+            "teddy bear",
+            "hair drier",
             "toothbrush",
         ]
 
-        self.clsBancopoly = [
-            "billete_10", "billete_100", "billete_20", "billete_50"
-        ]
+        self.clsBancopoly = ["billete_10", "billete_100", "billete_20", "billete_50"]
 
     def get_name_from_database(self, object_name):
         with open("db/Productos.json") as file:
@@ -65,14 +132,16 @@ class ShopAI:
 
             # Object Detection
             results_object = self.ObjectModel(frame, stream=True, verbose=False)
-            results_bancopoly = self.BancopolyModel(frame, imgsz=640, conf=0.5, stream=True, verbose=False)
+            results_bancopoly = self.BancopolyModel(
+                frame, imgsz=640, conf=0.5, stream=True, verbose=False
+            )
 
             # Variables to store the total price and the list of detected products
             total_price = 0
             detected_products = []
 
             # Delay for smoother display
-            wait_key_delay = 20
+            wait_key_delay = 5
 
             # Text thickness and font scale
             thickness = 1
@@ -123,7 +192,9 @@ class ShopAI:
                     cls = int(box.cls[0])
 
                     if cls < len(self.clsBancopoly):
-                        print(f"Detected Bancopoly class: {cls} ({self.clsBancopoly[cls]})")
+                        print(
+                            f"Detected Bancopoly class: {cls} ({self.clsBancopoly[cls]})"
+                        )
 
                         cv2.rectangle(
                             frame,
@@ -134,7 +205,7 @@ class ShopAI:
                         )
 
                         bancopoly_name = self.clsBancopoly[cls]
-                        bancopoly_value = int(bancopoly_name.split('_')[1])
+                        bancopoly_value = int(bancopoly_name.split("_")[1])
 
                         formatted_value = "Q. {:,.2f}".format(bancopoly_value)
 
@@ -149,9 +220,13 @@ class ShopAI:
                         )
 
                         total_price -= bancopoly_value
-                        detected_products.append(f"{bancopoly_name} Q. {formatted_value}")
+                        detected_products.append(
+                            f"{bancopoly_name} Q. {formatted_value}"
+                        )
                     else:
-                        print(f"Warning: Detected class index {cls} is out of range for Bancopoly classes")
+                        print(
+                            f"Warning: Detected class index {cls} is out of range for Bancopoly classes"
+                        )
 
             left_margin = 0
             line_height = 25

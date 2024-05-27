@@ -1,5 +1,4 @@
 from ultralytics import YOLO
-import os
 
 # Initialize models
 models = [YOLO("../models/yolov8l.pt"), YOLO("../models/bancopoly.pt")]
